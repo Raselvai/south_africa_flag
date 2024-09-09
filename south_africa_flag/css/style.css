@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+button:focus, input:focus, textarea:focus {
+	outline: 0;
+}
+
+.south_africa_flag {
+	height: 500px;
+	width: 700px;
+	background-image: url(../img/south-africa.jpg);
+	background-size: cover;
+	background-position: center;
+	margin: 5% auto;
+	position: relative;
+}
+
+.south_africa_flag .shape01 {
+	position: absolute;
+	bottom: -50px;
+	right: 0;
+	animation: wind 3s linear infinite;
+}
+
+.south_africa_flag .shape02 {
+	position: absolute;
+	top: -50px;
+	right: 0;
+	animation: wind 3s linear infinite;
+}
+
+@keyframes wind {
+	0% {
+		transform: translateX(0px);
+	}
+	100% {
+		transform: translateX(200px);
+	}
+}
